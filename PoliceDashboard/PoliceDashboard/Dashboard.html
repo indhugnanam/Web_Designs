@@ -131,13 +131,4 @@
 <script type="text/javascript">
 	$(function(){$(".header").load("header.html")});
 	$(function(){$(".footer").load("footer.html")});
-
-	var paragraphsHeight = $('.analysiscard.TotalCount');
-
-    var heights = paragraphsHeight.map(function() {
-        return $(this).height();
-    });
-
-    var maxHeight = Math.max.apply(this, heights);
-    paragraphsHeight.height(maxHeight);
 </script>
