@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dubai Police</title>
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			::placeholder {
+			  color: #000 !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="col-12 col-sm-8 border box-shadow offset-sm-2 loginbgcard mt-5">
+			<div class="col-12 col-sm-10 offset-sm-1">
+				<div class="col-10 offset-1 col-sm-6 offset-sm-3 logincard my-5">
+					<div class="col-12 my-3 text-center">
+						<img src="assets/images/dubai-police.png" style="width:40%;">
+					</div>
+
+					<div class="col-12 my-3 p-0">
+						<div class="col-12 col-sm-10 offset-sm-1 form-group my-4">
+							<input type="Email" class="form-control logintext" placeholder="Email" name="">
+						</div>
+						<div class="col-12 col-sm-10 offset-sm-1 form-group my-4">
+							<input type="password" class="form-control logintext" placeholder="Password" name="">
+						</div>
+
+						<div class="col-12 text-center">
+							<button class="col-12 col-sm-4 policebtn PoliceLogin" type="button">Login</button>
+						</div>
+					</div>
+
+					<div class="col-12 row my-3">
+						<div class="col-12 col-sm-6 row">
+							<input type="checkbox" class="mr-1" style="margin-top: 3px;">
+							<p class="text-white font-initial"> Remember</p>
+						</div>
+						<div class="col-12 col-sm-6 row">
+							<p class="float-right font-initial text-white">Forgot Password</p>
+						</div>
+					</div>
+				</div>
+			
+				</div>
+		</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).on('click','.PoliceLogin',function(){
+		window.open('Dashboard.html','_SELF');
+	});
+</script>

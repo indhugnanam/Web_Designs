@@ -1,0 +1,135 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="col-12 row bgsuccess">
+	<div class="col-1 col-md-2 header p-0"><div class="col-12 p-0"></div></div>
+	
+	<div class="col-11 col-md-10">
+		<section class="col-12 card mt-3">
+			<div class="col-12 col-md-10 offset-md-1 my-2 p-3 referencecard">
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th scope="col" class="text-secondary font-initial">Reference No</th>
+							<th scope="col" class="font-initial">Owner Name</th>
+							<th scope="col" class="font-initial">Mail Id</th>
+							<th scope="col" class="font-initial">Policy Number</th>
+							<th scope="col" class="font-initial">Car details</th>
+							<th scope="col" class="font-initial">Damage Results</th>
+						</tr>
+					</thead>
+					<tbody class="viewReportList">
+						<tr>
+							<td class="subtitle">Sort By:</td>
+							<td class="subtitle">Date</td>
+							<td class="subtitle">Month</td>
+							<td class="subtitle">Damage Results</td>
+							<td class="subtitle"> A Z </td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-orange damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-orange damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-orange damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-danger damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-danger damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-danger damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-warning damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-warning damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-danger damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-warning damageresult">Medium</td>
+						</tr>
+						<tr class="fontstyle">
+							<td>123/11/2020</td>
+							<td>John</td>
+							<td>mail@example.com</td>
+							<td>123xx45xx67</td>
+							<td>HUNDAI 120</td>
+							<td class="text-warning damageresult">Medium</td>
+						</tr>
+					</tbody>
+					</table>
+			</div>
+		</section>
+	</div>
+</section>
+
+<footer class="footer"></footer>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	
+<script type="text/javascript">
+	$(function(){$(".header").load("header.html")})
+	$(function(){$(".footer").load("footer.html")})
+
+	$(document).on('click','.viewReportList',function(){
+		window.open('reports.html','_SELF');
+	});
+</script>

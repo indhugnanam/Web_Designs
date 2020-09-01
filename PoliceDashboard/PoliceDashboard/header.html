@@ -1,0 +1,81 @@
+<html class="no-js" lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dubai Police</title>
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+
+	<body>
+
+		<div class="col-12 p-0 bgsuccess h-100">
+				<div id="mySidenav" class="policesidenav d-lg-none d-md-none">
+				  <div class="closebtn" onclick="closeNav()" style="margin-top: -50px;">&times;</div>
+				  <div class="col-12 row p-0">
+						<div class="col-12 p-0">
+							<img src="assets/images/dubaipoliceicon.png" style="width:300px;height:150px;margin-top: -10px;">
+						</div>
+						<div class="col-12 row">
+							<div class="col-lg-4 col-6"><i class="fa fa-bell text-warning ml-4"></i></div>
+							<div class="col-lg-8 col-6"><i class="fa fa-sign-in text-success"> LOG OUT</i></div>
+						</div>
+						<div class="col-12 Policemenu">
+
+							<a href="Dashboard.html"><h5 class="text-white ml-3 mt-4 cursor-pointer PoliceDashboard">Dashboard <i class="fa fa-windows float-right"></i></h5></a>
+							<a href="ReportsList.html"><h5 class="text-white ml-3 mt-4 PoliceReports">Reports <i class="fa fa-file float-right"></i></h5></a>
+							<a href="PhiysicalVisit.html"><h5 class="text-white ml-3 mt-4 cursor-pointer PoliceVisit">Phiysical Visit <i class="fa fa-street-view float-right"></i></h5></a>
+						</div>
+					</div>
+				</div>
+
+				<span class="d-lg-none d-md-none text-white p-2" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+				<div class="col-12 d-none d-md-block d-lg-block row">
+					<div class="col-12" style="margin-top: -50px;margin-left: -35px;">
+						<img src="assets/images/dubaipoliceicon-1.png">
+					</div>
+					<div class="col-12 row" style="margin-top: -60px;">
+						<div class="col-lg-4 col-12"><i class="fa fa-bell text-warning ml-3"></i></div>
+						<div class="col-lg-8 col-12"><i class="fa fa-sign-in text-success"> LOG OUT</i></div>
+					</div>
+					<div class="col-12 Policemenu ">
+
+						<a href="Dashboard.html"><h5 class="text-white ml-3 mt-4 cursor-pointer PoliceDashboard active">Dashboard <i class=" fa fa-windows float-right"></i></h5></a>
+						<a href="ReportsList.html"><h5 class="text-white ml-3 mt-4 PoliceReports">Reports <i class="fa fa-file float-right"></i></h5></a>
+						<a href="PhiysicalVisit.html"><h5 class="text-white ml-3 mt-4 cursor-pointer PoliceVisit">Phiysical Visit <i class=" fa fa-street-view float-right"></i></h5></a>
+					</div>
+				</div>
+		</div>
+
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	$(document).ready(function() {
+		$('.Policemenu a h5').removeClass('active');
+	   
+	    if (window.location.href.indexOf("reports.html") > -1) {
+	    	$('.PoliceReports').addClass('active');
+	    }else if (window.location.href.indexOf("PhiysicalVisit.html") > -1) {
+	    	$('.PoliceVisit').addClass('active');
+	    }else if(window.location.href.indexOf("ReportsList.html")>-1){
+	    	$('.PoliceReports').addClass('active');
+	    }else{
+	    	$('.PoliceDashboard').addClass('active');
+	    }
+	});
+</script>
+																																												
